@@ -7,4 +7,9 @@ description: 'Profile for Arista Networks in the API Evangelist network. Fortune
 created: '2026-05-05'
 modified: '2026-05-05'
 specificationVersion: '0.19'
+common:
+  - type: GitHubOrganization
+    url: https://github.com/aristanetworks
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/arista-networks-inc
 apis: []
