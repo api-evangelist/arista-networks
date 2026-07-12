@@ -12,4 +12,6 @@ common:
     url: https://github.com/aristanetworks
   - type: LinkedIn
     url: https://www.linkedin.com/company/arista-networks-inc
+  - url: https://blogs.arista.com/blog/rss.xml
+    type: Blog
 apis: []
