@@ -2,6 +2,8 @@ generated: '2026-10-21'
 method: searched
 checked:
 - terraform/integrations/terraform-integration-edges.yml
+- ansible/integrations/ansible-integration-edges.yml
+- chef-software/integrations/chef-software-integration-edges.yml
 source:
 - terraform/integrations/terraform-integration-edges.yml
 edges:
@@ -24,3 +26,39 @@ edges:
   category: infrastructure-as-code provider registry listing
   badges:
   - Verified publisher (Terraform partner tier)
+- partner_name: Ansible (ansible-galaxy)
+  partner: ansible
+  partner_match: mirror
+  mirror_match: register
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: ansible-galaxy
+  evidence: https://galaxy.ansible.com/ui/repo/published/arista/cvp/
+  mirror_of: ansible/integrations/ansible-integration-edges.yml
+  apps:
+  - arista.cvp
+  - arista.avd
+  - titom74.avd
+  listing_count: 1
+  detected: '2026-10-22'
+  detected_by: mirror-platform-listings.py
+  category: configuration-management content listing (Ansible collection)
+- partner_name: Chef Software (chef-supermarket)
+  partner: chef-software
+  partner_match: mirror
+  mirror_match: register
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: chef-supermarket
+  evidence: https://supermarket.chef.io/cookbooks/eos
+  mirror_of: chef-software/integrations/chef-software-integration-edges.yml
+  apps:
+  - eos
+  listing_count: 1
+  detected: '2026-10-22'
+  detected_by: mirror-platform-listings.py
+  category: configuration-management content listing (Chef cookbook)
